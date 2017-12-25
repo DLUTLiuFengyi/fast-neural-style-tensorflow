@@ -1,3 +1,18 @@
+
+有两种办法运行代码：使用1.已训练好的模型或者使用2.自己训练的模型
+
+1.用 [Baidu Drive](https://pan.baidu.com/s/1i4GTS4d) 提供的模型，将模型文件下载到项目文件夹中后，在项目文件夹中打开命令窗口，运行以下代码即可生成目标输出图片
+
+```
+python eval.py --model_file <your path to wave.ckpt-done> --image_file img/test.jpg
+```
+
+输出结果的位置在控制台输出的print语句里显示有
+
+2.我还没试，按照下面对应位置的教程去操作即可
+
+快速风格迁移的速度确实很快，但实际上并没有解决风格迁移的核心目的，只是通过用现有的模型避开“训练”这一步来减少时间。不过速度确实变快了n倍，从接近10分钟减到1秒多一点，而且损失值不大，效果很好。
+
 # fast-neural-style-tensorflow
 
 A tensorflow implementation for [Perceptual Losses for Real-Time Style Transfer and Super-Resolution](https://arxiv.org/abs/1603.08155).
